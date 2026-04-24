@@ -1,13 +1,237 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-40253",
-    "name": "35mm_bearing",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-40253",
+  "name": "35mm_bearing",
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-40254",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.34034391534391534,
+      "y": 0.5999999999999999,
+      "uniqueID": "id-40256",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 7
+        }
+      ]
+    },
+    {
+      "atomType": "Add-BOM-Tag",
+      "x": 0.5410052910052909,
+      "y": 0.42061281337047357,
+      "uniqueID": "id-40257",
+      "name": "Add BOM Tag",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Item Name",
+          "ioValue": "35mm Bearing",
+          "currentEquation": "35mm Bearing"
+        },
+        {
+          "name": "Number Needed",
+          "ioValue": 1
+        },
+        {
+          "name": "Cost (USD)",
+          "ioValue": 3.39
+        },
+        {
+          "name": "Source Link",
+          "ioValue": "https://amzn.to/4n8PNkd",
+          "currentEquation": "https://amzn.to/4n8PNkd"
+        }
+      ],
+      "BOMitem": {
+        "BOMitemName": "35mm Bearing",
+        "numberNeeded": 1,
+        "costUSD": 3.39,
+        "source": "https://amzn.to/4n8PNkd"
+      }
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.25767195767195766,
+      "y": 0.417966573816156,
+      "uniqueID": "id-40258",
+      "name": "Concentric_Circles",
+      "ioValues": [
+        {
+          "name": "OD",
+          "ioValue": 47,
+          "currentEquation": "47"
+        },
+        {
+          "name": "ID",
+          "ioValue": 35,
+          "currentEquation": "35"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-40259",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-40260",
+          "name": "OD",
+          "type": "number"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-40261",
+          "name": "ID",
+          "type": "number"
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.460559796437659,
+          "y": 0.42567567567567566,
+          "uniqueID": "id-40262",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 47
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.44529262086514,
+          "y": 0.7263513513513513,
+          "uniqueID": "id-40263",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 35
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.6615776081424937,
+          "y": 0.5506756756756757,
+          "uniqueID": "id-40264",
+          "ioValues": [
+            {
+              "name": "geometry1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "geometry2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-40260",
+          "ap2ID": "id-40262"
+        },
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-40261",
+          "ap2ID": "id-40263"
+        },
+        {
+          "ap2Name": "geometry1",
+          "ap1ID": "id-40262",
+          "ap2ID": "id-40264"
+        },
+        {
+          "ap2Name": "geometry2",
+          "ap1ID": "id-40263",
+          "ap2ID": "id-40264"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-40264",
+          "ap2ID": "id-40259"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-03-02T18:23:39.282Z",
+        "privateRepo": false,
+        "repoName": "Concentric_Circles",
+        "dateCreated": "2025-11-08T04:08:14Z",
+        "likes": 0,
+        "readMe": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/README.md?sanitize=true",
+        "yyyy": 2025,
+        "topMoleculeID": "id-1170",
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/BarbourSmith/Concentric_Circles",
+        "topics": [],
+        "parentRepo": null,
+        "forks": 0,
+        "dateModified": "739563",
+        "ranking": 5.4,
+        "searchField": "concentric_circles barboursmith creates two concentric circles. the result is 2d ",
+        "owner": "BarbourSmith",
+        "description": "Creates two concentric circles. The result is 2D",
+        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-40256",
+      "ap2ID": "id-40257"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-40257",
+      "ap2ID": "id-40254"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-40258",
+      "ap2ID": "id-40256"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
