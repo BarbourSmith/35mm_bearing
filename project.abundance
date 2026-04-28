@@ -80,13 +80,11 @@
       "ioValues": [
         {
           "name": "OD",
-          "ioValue": 47,
-          "currentEquation": "47"
+          "ioValue": 47
         },
         {
           "name": "ID",
-          "ioValue": 35,
-          "currentEquation": "35"
+          "ioValue": 35
         }
       ],
       "topLevel": false,
